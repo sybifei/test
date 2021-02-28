@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #h1 {
+            color: red;
+        }
+
+        #h2 {
+            color: yellow;
+        }
+
+        .comment {
+            color: cadetblue;
+            font-size: medium;
+        }
+
+        /* 鼠标指针移动到链接上 */
+        a:link {
+            text-decoration: none;
+        }
+
+        /* 未被访问的链接 */
+        a:visited {
+            text-decoration: none;
+        }
+
+        /* 已被访问的链接 */
+        a:active {
+            text-decoration: underline;
+        }
+
+        /* 正在被点击的链接 */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /*表格定义*/
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="h1">text1</h1>
+        <h2 id="h2">text2</h2>
+        <h2>text2</h2>
+
+        <ol>
+            <li class="comment">apple</li>
+            <li>banana</li>
+            <li>orange</li>
+        </ol>
+
+        <h2 class="comment">comment text1</h2>
+        <h3 class="comment">comment text2</h3>
+    </div>
+
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    <p>...</p>
+
+    <p><b><a href="/index.html" target="_blank">这是一个链接</a></b></p>
+    <p><b>注释：</b>为了使定义生效，a:hover 必须位于 a:link 和 a:visited 之后！！</p>
+    <p><b>注释：</b>为了使定义生效，a:active 必须位于 a:hover 之后！！</p>
+    <hr/>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+        </tr>
+        <tr>
+            <td>Steven</td>
+            <td>Jobs</td>
+        </tr>
+    </table>
+    <p><b>注释：</b>如果没有规定 !DOCTYPE，border-collapse 属性可能会引起意想不到的错误。</p>
+
+</body>
+
+</html>
